@@ -36,7 +36,7 @@ wap 开发过程中特别需要注意的地方请参见 [wap 开发指南](dev-g
 
 - [handy.switchable@1.0.0](http://handyjs.github.com/switchable/)
 - [arale.validator@0.8.9](http://aralejs.org/validator/)
-- [gallery.iscroll@4.1.9](http://cubiq.org/iscroll-4)
+- [gallery.iscroll@4.1.9](http://cubiq.org/iscroll-4) require('gallery/iscroll/4.1.9/iscroll-lite.js')
 
 ## 我们不做什么
 
