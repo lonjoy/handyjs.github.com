@@ -13,6 +13,9 @@
 
 - [android 点击穿透](http://qiqicartoon.com/?p=1197)
 - [position: fixed](http://www.quirksmode.org/blog/archives/2010/12/the_fifth_posit.html)
+- 宽度为100%的input元素，在IOS下，屏幕旋转之后，会使屏幕右侧出现空白margin区域。
+    - [方案一](http://stackoverflow.com/questions/10973649/mobile-safari-reflow-without-resize-buggy-behavior)
+    - 方案二：给input的父节点添加 `overflow-x:hidden;` 的样式
 
 ### 参考资料
 
