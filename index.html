@@ -1,121 +1,215 @@
 <!DOCTYPE HTML>
-<html lang="en">
-  <head>
+<html lang="en-US">
+<head>
     <meta charset="UTF-8">
-    <title>Handy - Handy</title>
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <meta name="generator" content="Felix Felicis 3.7" />
-    <link type="image/x-icon" href="http://aralejs.org/static/css/favicon.ico?v=1dbfd" rel="icon">
-    <link rel="stylesheet" href="http://aralejs.org/static/css/normalize.css?v=d9edf" />
-    <link rel="stylesheet" href="http://aralejs.org/static/css/site.css?v=30dc0" />
-    <link rel="stylesheet" href="http://aralejs.org/static/css/solarized.css?v=a25ea" />
-    <script src="https://a.alipayobjects.com/static/arale/seajs/1.2.1/sea.js"></script>
-    <script src="http://aralejs.org/static/js/arale-helper.js?v=6b3b5"></script>
-    <script src="http://aralejs.org/static/js/site.js?v=6b358"></script>
-<script>
-  (function() {
-    var data;
-    seajs._package = data = {}
-    data.dependencies && (delete data.dependencies['$'])
-    data.devDependencies && (delete data.devDependencies['$'])
-
-    seajs.config({ alias: data.dependencies })
-    seajs.config({ alias: data.devDependencies })
-    seajs.config({ alias: {} })
-  })();
-</script>
-    <!--[if lt IE 9]>
-    <script src="http://aralejs.org/static/js/html5shiv.js?v=837ac"></script>
-    <![endif]-->
-    
-<style type="text/css">
-#sidebar-wrapper {
-display: none;
-}
-#content-wrapper {
-float: none;
-width: auto;
-}
-</style>
-  </head>
-  <body>
+    <link rel="icon" href="assets/css/favicon.ico" type="image/x-icon" />
+    <link rel="stylesheet" href="assets/css/normalize.css" />
+    <link rel="stylesheet" href="assets/css/solarized.css" />
+    <link rel="stylesheet" href="assets/css/site.css" />
+    <link rel="stylesheet" href="assets/css/style.css" />
+    <title>Handy</title>
+    <style type="text/css">
+        #sidenav {
+            margin: 0 40px 20px 20px;
+            padding: 0;
+            border-radius: 5px;
+            background-color: #fff; 
+            list-style: none;
+        }
+        #sidenav li a {
+            display: block;
+            padding: 10px 0 10px 20px;
+            border-bottom: 1px solid #eee;
+            font-size: 16px;
+        }
+        #sidenav li:first-child a{
+            border-radius: 5px 5px 0 0;
+        }
+        #sidenav li:last-child a{
+            border-radius: 0 0 5px 5px; 
+            border-bottom: none;
+        }
+        #sidenav li a:hover,
+        #sidenav li.active a {
+            text-decoration: none;
+            color: #fff;
+            background-color: #6C97C2;
+        }
+    </style>
+</head>
+<body>
     <div id="body-wrapper">
-      <aside id="sidebar-wrapper">
-        <h1><a href="./"></a><sup class="package-root"><a href="/"></a></sup></h1>
-        <p class="version">当前版本：<span></span></p>
-        <p class="description"></p>
-      </aside>
-      <div id="content-wrapper">
-        <div id="content">
-<article class="hentry">
-  <h1 class="entry-title">Handy</h1>
-  <div class="meta">2012-11-22</div>
-  <div class="entry-content">
-    <p>Handy 是由支付宝前端团队创建的基于 <a href="http://seajs.org">SeaJS</a> 和 <a href="https://github.com/seajs/spm/wiki">spm</a> 的 wap 模块精选集，她能帮助你快速创建 wap 站点。</p>
-
-<hr/>
-
-<h2 id="toc_0">如何使用</h2>
-<p>模块的使用和开发请参见通用教程：</p>
-
-<ul>
-<li>快速入门：<a href="http://seajs.org/docs/#quick-start">Hello SeaJS: 5分钟上手教程</a></li>
-<li>进阶教程：<a href="https://github.com/spmjs/spm/wiki/Hello-spm%EF%BC%9A%E4%BD%BF%E7%94%A8-spm-%E5%92%8C-SeaJS-%E5%BC%80%E5%8F%91%E4%B8%80%E4%B8%AA%E4%B8%AD%E5%9E%8B%E9%A1%B9%E7%9B%AE">Hello spm: 使用 spm 和 SeaJS 开发一个中型项目</a></li>
-</ul>
-<p>wap 开发过程中特别需要注意的地方请参见 <a href="dev-guide.html">wap 开发指南</a></p>
-
-<h2 id="toc_1">模块精选</h2>
-
-<h3 id="toc_2">CSS</h3>
-
-<ul>
-<li><a href="http://handyjs.github.com/base-ui/">handy.base-ui@1.0.0</a></li>
-</ul>
-
-<h3 id="toc_3">基础</h3>
-
-<ul>
-<li><a href="http://aralejs.org/events/">arale.events@1.0.0</a></li>
-<li><a href="http://aralejs.org/class/">arale.class@1.0.0</a></li>
-<li><a href="http://aralejs.org/base/">arale.base@1.0.1</a></li>
-<li><a href="http://aralejs.org/widget/">arale.widget@1.0.2</a></li>
-</ul>
-
-<h3 id="toc_4">工具</h3>
-
-<ul>
-<li><a href="http://zeptojs.com/">gallery.zepto@1.0.0</a></li>
-</ul>
-
-<h3 id="toc_5">UI</h3>
-
-<ul>
-<li><a href="http://handyjs.github.com/switchable/">handy.switchable@1.0.0</a></li>
-<li><a href="http://aralejs.org/validator/">arale.validator@0.8.9</a></li>
-<li><a href="http://cubiq.org/iscroll-4">gallery.iscroll@4.1.9</a> require(&#39;gallery/iscroll/4.1.9/iscroll-lite.js&#39;)</li>
-</ul>
-
-<h2 id="toc_6">我们不做什么</h2>
-
-<ul>
-<li>不做模拟的dialog，使用系统自带的alert、confirm 和 prompt。</li>
-<li>不做模拟的滑动换页效果。</li>
-</ul>
-
-  </div>
-</article>
-</div>
-      </div>
+        <div id="title-wrapper">
+            <h1 id="title" class="inline"><a href="./">Handy</a></h1>
+            <input type="text" class="inline" id="search" placeholder="搜索 Handy 模块" autocomplete="off">
+            <p id="description"></p>
+        </div>
+        <div id="main-wrapper">
+            <div class="main-block" id="document-wrapper">
+                <ul id="sidenav">
+                    <li><a href="https://github.com/handyjs/handyjs.github.com/issues?labels=question">Question</a></li>
+                    <li><a href="http://aralejs.org/">Arale</a></li>
+                    <li><a href="http://seajs.org/">SeaJS</a></li>
+                </ul>
+            </div>
+            <div class="main-block" id="module-wrapper">
+                <h2>Handy・<span class="catigory">css</span></h2>
+                <div class="modules modules-handy-ui">
+                </div>
+                <h2>Handy・<span class="catigory">js</span></h2>
+                <div class="modules modules-handy">
+                </div>
+                <h2>Arale・<span class="catigory">mobile</span></h2>
+                <div class="modules modules-arale">
+                </div>
+                <h2>gallery・<span class="catigory">业界精选</span></h2>
+                <div class="modules modules-gallery">
+                </div>
+            </div>
+            <div id="card">
+                <h2 class="card-name"></h2>
+                <p class="card-version"></p>
+                <p class="card-description"></p>
+            </div>
+        </div>
     </div>
     <div id="footer-wrapper">
-      <footer>
-        <p class="powered">
-        <a href="http://aralejs.org">Arale</a> •
-        <a href="http://seajs.org">SeaJS</a> •
-        <a href="https://github.com/seajs/spm">spm</a> •
-        <a href="http://lab.lepture.com/liquidluck/">Felix Felicis</a>
-        </p>
-      </footer>
+        <footer>
+            <p class="powered">
+                <a href="http://aralejs.org">Arale</a> •
+                <a href="http://aliceui.org">Alice</a> •
+                <a href="http://seajs.org">SeaJS</a> •
+                <a href="https://github.com/spmjs/spm">spm</a> •
+                <a href="{{system.homepage}}">{{system.name}}</a>
+            </p>
+        </footer>
     </div>
-  </body>
+    <script type="text/javascript" src="http://static.alipayobjects.com/seajs/1.3.1/sea.js"></script>
+    <script type="text/javascript">
+    (function(){
+        seajs.config({
+            base: 'http://static.alipayobjects.com',
+            alias: {
+                '$': 'gallery/jquery/1.8.2/jquery',
+                'popup': 'arale/popup/0.9.13/popup',
+                'autocomplete': 'arale/autocomplete/1.0.0/autocomplete',
+                'fixed': 'arale/fixed/1.0.0/fixed',
+                'word-color': 'http://aralejs.org/sea-modules/afc163/word-color/1.0.0/word-color.js',
+                'aralemodules': 'http://handyjs.github.io/aralemodules.js',
+                'handymodules': 'http://handyjs.github.io/handymodules.js'
+            },
+            preload: ['seajs/plugin-combo'],
+            comboExcludes: /word\-color|aralemodules|handymodules/
+        });
+        seajs.use(['$', 'popup', 'autocomplete', 'fixed', 'word-color', 'aralemodules', 'handymodules'], function($, Popup, Autocomplete, Fixed, wordColor, araleModules, handyModules){
+            var modules = araleModules.concat(handyModules);
+
+             // 搜索组件自动完成
+            var ac = new Autocomplete({
+                trigger: '#search',
+                selectFirst: true,
+                dataSource: function() {
+                    if (modules) {
+                        this.trigger('data', modules);
+                    } else {
+                        this.trigger('data', araleModules);
+                    }
+                },
+                filter: function(data, query) {
+                    var result = [];
+                    $.each(data, function(index, value) {
+                        var temp = (value.root||value.family) + '.' + value.name;
+                        value.description = value.description || '';
+                        if (temp.indexOf(query) > -1) {
+                            result.unshift({matchKey: temp, url: value.homepage});
+                        } else if (value.description.indexOf(query) > -1) {
+                            result.push({matchKey: temp, url: value.homepage});
+                        }
+                    });
+                    return result;
+                }
+            }).render();
+
+            ac.on('itemSelect', function(item) {
+                ac.get('trigger').val('正转到 ' + item.matchKey).attr('disabled', 'disabled');
+                var value = item.matchKey.split('.');
+                if (value[0] === 'arale') {
+                    location.href = '/' + value[1];
+                } else if (value[0] === 'alipay') {
+                    location.href = 'http://arale.alipay.im/alipay/' + value[1];
+                } else {
+                    location.href = item.url;
+                }
+            });
+
+            insertModules(modules);
+            function insertModules(data) {
+                if ($('#module-wrapper').length === 0) {
+                    return;
+                }
+
+                // 按字母顺序排序
+                data = data.sort(function(a, b) {
+                    return a.name[0] > b.name[0];
+                });
+
+                $('.modules-handy, .modules-arale, .modules-gallery').empty();
+                for(var i=0; i<data.length; i++) {
+                    var item = $('<a class="module" href="#"></a>');
+                    var module = data[i];
+                    var root = module.root || module.family;
+                    item.html(module.name)
+                        .data('name', module.name)
+                        .data('description', module.description)
+                        .data('version', module.version)
+                        .attr('href', module.homepage);
+                    if(module.root == 'handy' && module.tag == 'ui') {
+                        $('.modules-'+module.root + '-' + module.tag).append(item).prev().show();
+                    } else {
+                        $('.modules-'+module.root).append(item).prev().show();
+                    }
+                }
+                cardPopup('.module');
+                color('.module');
+            }
+
+            function cardPopup(items) {
+                // 卡片
+                var popup = new Popup({
+                    element: '#card',
+                    trigger: items,
+                    effect: 'fade',
+                    duration: 100,
+                    delay: -1,
+                    align: {
+                        baseXY: [0, -5],
+                        selfXY: [0, '100%']
+                    }
+                });
+                popup.on('before:show', function() {
+                    var at = $(this.activeTrigger);
+                    $('#card .card-name').html(at.data('name'));
+                    $('#card .card-description').html(at.data('description') || '');
+                    $('#card .card-version').html(at.data('version') || '');
+                });
+            }
+
+            function color(items) {
+                items = $(items);
+                items.each(function(index, item) {
+                    item = $(item);
+                    item.css('border-color', toRgba(wordColor(item.html()), 0.65));
+                });
+            }
+
+            function toRgba(rgb, opacity) {
+                if ($.browser.msie && $.browser.version < 9) {
+                    return rgb;
+                }
+                return rgb.replace('rgb', 'rgba').replace(')', ',' + opacity + ')');
+            }
+        });
+    })();
+    </script>
+</body>
 </html>
