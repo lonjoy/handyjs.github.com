@@ -1,0 +1,145 @@
+<!DOCTYPE HTML>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Flexbox test</title>
+</head>
+<style type="text/css">
+.flexbox {
+	display: -webkit-box;
+    display: -moz-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+    border: 3px solid #ccc;
+    padding: 20px;
+}
+.flexbox-item {
+    -webkit-box: border-sizing;
+    -webkit-box-sizing:border-box;
+    -moz-box-sizing:border-box;
+    box-sizing:border-box;
+    padding: 20px;
+    margin: 10px;
+    color: #fff;
+    background-color: #6C97C2;
+}
+.flex-wrap{
+    width: 800px;
+    -webkit-flex-wrap: wrap;
+    flex-wrap: wrap;
+}
+.flex-wrap .flexbox-item{
+    width: 300px;
+}
+.flex-direction-row{
+    -webkit-flex-direction: row-reverse;
+    flex-direction: row-reverse;
+}
+.flex-direction-column{
+    -webkit-flex-direction: column;
+    flex-direction: column;
+    height: 300px;
+}
+.justify-content{
+    -webkit-justify-content: space-around;
+    justify-content: space-around;
+}
+.align-items{
+    -webkit-align-items: center;
+    align-items: center;
+}
+.align-self{
+    -webkit-align-self: flex-end;
+    align-self: flex-end;
+}
+.order .flexbox-item:nth-child(1){
+    -webkit-order: 2;
+    order: 2;
+}
+.order .flexbox-item:nth-child(2){
+    -webkit-order: 1;
+    order: 1;
+}
+.order .flexbox-item:nth-child(3){
+    -webkit-order: 0;
+    order: 0;
+}
+
+.flex-basis{
+    -webkit-flex-basis: 10em;
+    flex-basis: 10em;
+}
+.flex-grow {
+    -webkit-flex-grow: 3;
+    flex-grow: 3;
+}
+.flex-shrink {
+    -webkit-flex-shrink: 3;
+    flex-shrink: 3;
+}
+
+</style>
+<body>
+<h3>flex-wrap: wrap</h3>
+<div class="flexbox flex-wrap">
+    <div class="flexbox-item">A</div>
+    <div class="flexbox-item">B</div>
+    <div class="flexbox-item">C</div>
+</div>
+<h3>flex-direction: row-reverse</h3>
+<div class="flexbox flex-direction-row">
+    <div class="flexbox-item">A</div>
+    <div class="flexbox-item">B</div>
+    <div class="flexbox-item">C</div>
+</div>
+<h3>flex-direction: column</h3>
+<div class="flexbox flex-direction-column">
+    <div class="flexbox-item">A</div>
+    <div class="flexbox-item">B</div>
+    <div class="flexbox-item">C</div>
+</div>
+<h3>justify-content: space-around (main axis 为水平方向)</h3>
+<div class="flexbox justify-content">
+    <div class="flexbox-item">A</div>
+    <div class="flexbox-item">B</div>
+    <div class="flexbox-item">C</div>
+</div>
+<h3>align-items: center (main axis 为水平方向)</h3>
+<div class="flexbox align-items">
+    <div class="flexbox-item">A</div>
+    <div class="flexbox-item">B</div>
+    <div class="flexbox-item">C</div>
+</div>
+<h3>justify-content: space-around (main axis 为竖直平方向)</h3>
+<div class="flexbox flex-direction-column justify-content">
+    <div class="flexbox-item">A</div>
+    <div class="flexbox-item">B</div>
+    <div class="flexbox-item">C</div>
+</div>
+<h3>align-items: center (main axis 为竖直平方向)</h3>
+<div class="flexbox flex-direction-column align-items">
+    <div class="flexbox-item">A</div>
+    <div class="flexbox-item">B</div>
+    <div class="flexbox-item">C</div>
+</div>
+<h3>align-self: flex-end</h3>
+<div class="flexbox align-items">
+    <div class="flexbox-item align-self">A</div>
+    <div class="flexbox-item">B</div>
+    <div class="flexbox-item">C</div>
+</div>
+<h3>order</h3>
+<div class="flexbox order">
+    <div class="flexbox-item">A</div>
+    <div class="flexbox-item">B</div>
+    <div class="flexbox-item">C</div>
+</div>
+<h3>flex-basis / flex-grow / flex-shrink</h3>
+<div class="flexbox">
+    <div class="flexbox-item flex-basis">A</div>
+    <div class="flexbox-item flex-grow">B</div>
+    <div class="flexbox-item flex-shrink">C</div>
+</div>
+</body>
+</html>

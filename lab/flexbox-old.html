@@ -1,0 +1,99 @@
+<!DOCTYPE HTML>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Flexbox test</title>
+</head>
+<style type="text/css">
+.flexbox {
+	display: -webkit-box;
+    display: -moz-box;
+    display: box;
+    border: 3px solid #ccc;
+}
+.flexbox-item {
+    -webkit-box: border-sizing;
+    -webkit-box-sizing:border-box;
+    -moz-box-sizing:border-box;
+    box-sizing:border-box;
+    padding: 20px;
+    margin: 10px;
+    color: #fff;
+    background-color: #6C97C2;
+}
+.box-lines{
+    width: 800px;
+    -webkit-box-lines: multiple;
+    box-lines: multiple;
+}
+.box-lines .flexbox-item{
+    width: 300px;
+}
+.box-orient{
+    -webkit-box-orient: vertical;
+    box-orient: vertical;
+}
+.box-direction{
+    -webkit-box-direction: reverse;
+    box-direction: reverse;
+}
+.box-pack{
+    -webkit-box-pack:justify;
+    box-pack:justify;
+}
+.box-align{
+    -webkit-box-align: center;
+    box-align: center;
+}
+.box-flex .flexbox-item:nth-child(1){
+    -webkit-box-flex: 1;
+    box-flex: 1;
+}
+.box-flex .flexbox-item:nth-child(2){
+    -webkit-box-flex: 2;
+    box-flex: 2;
+}
+.box-flex .flexbox-item:nth-child(3){
+    -webkit-box-flex: 3;
+    box-flex: 3;
+}
+</style>
+<body>
+<h3>box-lines: multiple</h3>
+<div class="flexbox box-lines">
+    <div class="flexbox-item">A</div>
+    <div class="flexbox-item">B</div>
+    <div class="flexbox-item">C</div>
+</div>
+<h3>box-orient: vertical</h3>
+<div class="flexbox box-orient">
+    <div class="flexbox-item">A</div>
+    <div class="flexbox-item">B</div>
+    <div class="flexbox-item">C</div>
+</div>
+<h3>box-direction: reverse</h3>
+<div class="flexbox box-direction">
+    <div class="flexbox-item">A</div>
+    <div class="flexbox-item">B</div>
+    <div class="flexbox-item">C</div>
+</div>
+<h3>box-pack: justify</h3>
+<div class="flexbox box-pack">
+    <div class="flexbox-item">A</div>
+    <div class="flexbox-item">B</div>
+    <div class="flexbox-item">C</div>
+</div>
+<h3>box-align: center</h3>
+<div class="flexbox box-orient box-align">
+    <div class="flexbox-item">A</div>
+    <div class="flexbox-item">B</div>
+    <div class="flexbox-item">C</div>
+</div>
+<h3>box-flex</h3>
+<div class="flexbox box-flex">
+    <div class="flexbox-item">A</div>
+    <div class="flexbox-item">B</div>
+    <div class="flexbox-item">C</div>
+</div>
+</body>
+</html>
