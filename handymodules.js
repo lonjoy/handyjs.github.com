@@ -50,6 +50,7 @@ define([
   "name": "jquto",
   "version": "1.0.0",
   "description": "基于jQuery和Zepto的移动基础类库",
+  "homepage": "https://github.com/handyjs/jquto.git",
   "keywords": ["jquto", "jquery", "Zepto"],
   "repository": {
     "type": "git",

@@ -141,7 +141,8 @@
                     if(module.root == 'handy' && module.tag == 'ui') {
                         $('.modules-'+module.root + '-' + module.tag).append(item).prev().show();
                     } else {
-                        $('.modules-'+module.root).append(item).prev().show();
+                        var name = module.root || module.family;
+                        $('.modules-'+ name).append(item).prev().show();
                     }
                 }
                 cardPopup('.module');
