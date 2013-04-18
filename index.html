@@ -2,40 +2,13 @@
 <html lang="en-US">
 <head>
     <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="icon" href="assets/css/favicon.ico" type="image/x-icon" />
     <link rel="stylesheet" href="assets/css/normalize.css" />
     <link rel="stylesheet" href="assets/css/solarized.css" />
     <link rel="stylesheet" href="assets/css/site.css" />
     <link rel="stylesheet" href="assets/css/style.css" />
     <title>Handy</title>
-    <style type="text/css">
-        #sidenav {
-            margin: 0 40px 20px 20px;
-            padding: 0;
-            border-radius: 5px;
-            background-color: #fff; 
-            list-style: none;
-        }
-        #sidenav li a {
-            display: block;
-            padding: 10px 0 10px 20px;
-            border-bottom: 1px solid #eee;
-            font-size: 16px;
-        }
-        #sidenav li:first-child a{
-            border-radius: 5px 5px 0 0;
-        }
-        #sidenav li:last-child a{
-            border-radius: 0 0 5px 5px; 
-            border-bottom: none;
-        }
-        #sidenav li a:hover,
-        #sidenav li.active a {
-            text-decoration: none;
-            color: #fff;
-            background-color: #6C97C2;
-        }
-    </style>
 </head>
 <body>
     <div id="body-wrapper">
@@ -51,6 +24,9 @@
                     <li><a href="http://aralejs.org/">Arale</a></li>
                     <li><a href="http://seajs.org/">SeaJS</a></li>
                 </ul>
+                <div class="QRCode">
+                    <img src="assets/img/Handyjs QR Code.png" alt="handjs QR Code" />
+                </div>
             </div>
             <div class="main-block" id="module-wrapper">
                 <h2>Handy・<span class="catigory">css</span></h2>
@@ -80,7 +56,6 @@
                 <a href="http://aliceui.org">Alice</a> •
                 <a href="http://seajs.org">SeaJS</a> •
                 <a href="https://github.com/spmjs/spm">spm</a> •
-                <a href="{{system.homepage}}">{{system.name}}</a>
             </p>
         </footer>
     </div>
